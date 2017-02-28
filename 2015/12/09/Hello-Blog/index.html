@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hello，Blog | Luucio&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="从do到ramnode再到conoha，从wp到ghost再到hexo，我的博客又开通了(好吧，我承认是折腾🐶)。由于ssh到我之前ramnode的vps实在太慢，而且blog经常要十几秒才能打开，简直要了亲命，之前陆陆续续写的几篇blog也不打算备份再转过来了，直接放弃，转向了conoha，博客也换成了hexo，到目前感觉还是不错的(油管1080p带我飞)，经过这段折腾，也稍微总结一点体会吧。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello，Blog">
+<meta property="og:url" content="http://xiao.luucio.com/2015/12/09/Hello-Blog/index.html">
+<meta property="og:site_name" content="Luucio's blog">
+<meta property="og:description" content="从do到ramnode再到conoha，从wp到ghost再到hexo，我的博客又开通了(好吧，我承认是折腾🐶)。由于ssh到我之前ramnode的vps实在太慢，而且blog经常要十几秒才能打开，简直要了亲命，之前陆陆续续写的几篇blog也不打算备份再转过来了，直接放弃，转向了conoha，博客也换成了hexo，到目前感觉还是不错的(油管1080p带我飞)，经过这段折腾，也稍微总结一点体会吧。">
+<meta property="og:updated_time" content="2015-12-10T07:33:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hello，Blog">
+<meta name="twitter:description" content="从do到ramnode再到conoha，从wp到ghost再到hexo，我的博客又开通了(好吧，我承认是折腾🐶)。由于ssh到我之前ramnode的vps实在太慢，而且blog经常要十几秒才能打开，简直要了亲命，之前陆陆续续写的几篇blog也不打算备份再转过来了，直接放弃，转向了conoha，博客也换成了hexo，到目前感觉还是不错的(油管1080p带我飞)，经过这段折腾，也稍微总结一点体会吧。">
+  
+    <link rel="alternative" href="/atom.xml" title="Luucio&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://ww3.sinaimg.cn/large/703e3188gw1eytr6acm9fj208c08ct96.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Luucio</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">Constant dropping wears the stone</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/随笔">随笔</a></li>
+				        
+							<li><a href="/photo">相册</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="http://github.com/coolxiaox" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/tomatofriedeggs" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://xiao.terrygo.win/atom.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/技术/" style="font-size: 20px;">技术</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://macshuo.com">MacTalk-池建强的随想录</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://ibruce.info">不如</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">代码猴子，游戏汪，未来的全栈攻城狮，犊力开发者</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Luucio</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://ww3.sinaimg.cn/large/703e3188gw1eytr6acm9fj208c08ct96.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Luucio</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">Constant dropping wears the stone</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+					<li><a href="/photo">相册</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="http://github.com/coolxiaox" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/tomatofriedeggs" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://xiao.terrygo.win/atom.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-Hello-Blog" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/12/09/Hello-Blog/" class="article-date">
+  	<time datetime="2015-12-09T06:23:08.000Z" itemprop="datePublished">2015-12-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hello，Blog
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>从<a href="https://www.digitalocean.com" target="_blank" rel="external">do</a>到<a href="https://www.ramnode.com" target="_blank" rel="external">ramnode</a>再到<a href="https://www.conoha.jp/" target="_blank" rel="external">conoha</a>，从<a href="https://wordpress.org/" target="_blank" rel="external">wp</a>到<a href="https://ghost.org/" target="_blank" rel="external">ghost</a>再到<a href="https://hexo.io/" target="_blank" rel="external">hexo</a>，我的博客又开通了(好吧，我承认是折腾🐶)。由于ssh到我之前<a href="https://www.ramnode.com" target="_blank" rel="external">ramnode</a>的vps实在太慢，而且blog经常要十几秒才能打开，简直要了亲命，之前陆陆续续写的几篇blog也不打算备份再转过来了，直接放弃，转向了<a href="https://www.conoha.jp/" target="_blank" rel="external">conoha</a>，博客也换成了<a href="https://hexo.io/" target="_blank" rel="external">hexo</a>，到目前感觉还是不错的(油管1080p带我飞)，经过这段折腾，也稍微总结一点体会吧。</p>
+<ol>
+<li><p><strong>有个自己的服务器是必须的。</strong>作为一个程序猿，平时喜欢捣鼓捣鼓，有些程序什么的都可以放在上面跑。身处天朝，有个稳定的梯子是必不可少的，ssh -D或ss大家都懂得</p>
+</li>
+<li><p><strong>便宜没好货。</strong>最开始用的<a href="https://www.digitalocean.com" target="_blank" rel="external">do</a>刚开始几个月还可以，后来<a href="https://www.digitalocean.com" target="_blank" rel="external">do</a>的dashboard都被墙了，网页经常刷不全，进dashboard管理下vps都干不了，网络也经常抽经，每当google查个东西半天刷不出来的时候简直没法玩。<a href="https://www.ramnode.com" target="_blank" rel="external">ramnode</a>就不说了，虽然1个Quarter才三十四块钱，blog经常访问不了也是白搭</p>
+</li>
+<li><p><strong>简约至上。</strong>在探索人生真谛的道路上，为了避免捡了芝麻丢了西瓜这种low的问题，就是找个地方记下来。最初用lamp搭建的wp感觉还是太臃肿了，毕竟我只是需求一个写写日志的地方，对markdown也没有那么好的支持(虽然我也是才学)。尝试了ghost,感觉也还行，但现在的静态博客太火了，作为一个折腾…，好吧，又一次跟疯了</p>
+<p> 2012年12月9日，我的新blog在和世界say Hello!!</p>
+</li>
+</ol>
+<p>好了，第一次就少写点，以免扯到dan， 希望还有下一篇-:)</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/12/15/lua-file-handle/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          lua文件操作
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Hello-Blog" data-title="Hello，Blog" data-url="http://xiao.luucio.com/2015/12/09/Hello-Blog/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"terrygo"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 Luucio
+    	</div>
+        <div class="footer-middle">
+            <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+            本页总访问 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> 次
+      	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</footer>
+
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-71108475-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
